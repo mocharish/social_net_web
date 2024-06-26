@@ -10,14 +10,16 @@ import rest from '../images/rest.jpg';
 import UserInput from './userInput.js';
 
 
-function Options({isDarkMode}){
+function Options({isDarkMode, user, token}){
+ 
     return(
+      
     <div >
         <ul class="list-group1">
 
         <li class="list-group-item1 d-flex align-items-center">
   
-    <UserInput/>
+    <UserInput user={user} token={token}/>
   </li>
 
 

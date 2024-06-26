@@ -3,19 +3,19 @@ import './post.css';
 import LikeButton from './like.js';
 import Share from './share.js';
 import CommentButton from './comment'; 
+import { Link, useNavigate } from 'react-router-dom';
 
-
-function Post({ id, content, author, date, pic, onDelete, editable = false}) {
+function Post({ id, content, author, date, pic, onDelete, onEdit, token, email, connectedEmail, connectedUser}) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(content);
-
+  const navigate = useNavigate(); 
   const handleDelete = () => {
     onDelete(id);
   };
 
   const handleEdit = () => {
-    if (!editable) return;
-    setIsEditing(true);
+    console.log('handleEdit',id);
+    onEdit(id);
   };
 
   const handleSave = () => {
@@ -28,25 +28,27 @@ function Post({ id, content, author, date, pic, onDelete, editable = false}) {
     setEditedContent(e.target.value);
   };
 
+  
+  const handleClick = () => {
+    console.log('postConnect',connectedEmail);
+    console.log('connectedUser',connectedUser);
+    navigate(`/profile/${email}`, { state: { author,token: token ,connectedEmail, connectedUser } });
+  };
+
+
+
   return (
+  
     <div className="post">
       <button className="delete-button" onClick={handleDelete} data-testid="delete-button">
         &#10006;
       </button>
       <div className="author-date-container">
-        <h3 className="author">{author}</h3>
+        <button onClick={handleClick}>{author}</button>
+
         <p className="date">{date}</p>
       </div>
-
-      {editable ? (
-        isEditing ? (
-          <textarea className="edit-content" value={editedContent} onChange={handleContentChange} />
-        ) : (
-          <p className="content">{editedContent}</p>
-        )
-      ) : (
-        <p className="content">{content}</p>
-      )}
+      <div className="content">{content}</div>
       <img src={pic} alt="Post-pic" className="post-pic" />
       <div className="action-buttons">
         {isEditing ? (
@@ -64,3 +66,4 @@ function Post({ id, content, author, date, pic, onDelete, editable = false}) {
 
 
 export default Post;
+

@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import Logo from './logo.js';
 
 
-function LoginPage() {
+function  LoginPage() {
   const [isNightMode, setIsNightMode] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,19 +29,35 @@ function LoginPage() {
     }
   }, [isNightMode]);
 
-  const handleLogin = () => {
-    const user = users.find((user) => user.email === email && user.password === password);
-    if (user) {
-      console.log('Login successful');
-      setIsLoggedIn(true);
-      setError('');
 
-      navigate('/feed', { state: { user } }); // Pass user object to the Feed component
 
-    } else {
-      setError('Invalid email or password');
+  const handleLogin =  async () => {
+    const user ={
+      email: email,
+      password: password
     }
+    const response = await fetch("http://localhost:8080/api/token", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user)
+    });
+    if(response.status !== 201){
+      console.log(response);
+      alert("Invalid email or password");
+      return;
+    }
+
+    const json = await response.json();
+    const token = json.token;
+    const loggedUser= json.user;
+    console.log('login token',token);
+    navigate('/feed', { state: { user: loggedUser, token: token } });
   };
+
+
+
 
   return (
   
@@ -53,7 +69,6 @@ function LoginPage() {
           <i className="bi bi-moon"></i>
         </div>
         <Logo/>
-
 
         <div className="right-section-container">
           <div className="right-section">

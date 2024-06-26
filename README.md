@@ -1,4 +1,4 @@
-Link to repository: https://github.com/mocharish/social_net_web.git
+Link to repository: https://github.com/YehonatanHayat/part2.git
 
 In this FeedBook page you can create a new user, sign in and then access the feed page. In the feed page there is content and you can add posts, comments, likes and other actions.
 

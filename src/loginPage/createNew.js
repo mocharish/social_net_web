@@ -108,35 +108,60 @@ function CreateNew({ isNightMode }) {
     return true;
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
 
-    // Check if the email already exists in the array of users
-    const userEmail = email;
-    const emailExists = users.some(user => user.email === userEmail);
+const handleSubmit = async (event) => {
+  event.preventDefault();
 
-    // Show error if email already exists
-    if (emailExists) {
-      setEmailError('Email already exists');
-      return;
-    } else {
-      setEmailError('');}
 
-    // If all validations pass, create a new user object
-    const newUser = {
-      name: name,
-      email: userEmail,
-      password: password,
-      dob: `${year}-${month}-${day}`,
-      gender: gender,
-      photo: photo 
+  let photoUrl = '';
+  if (photo && typeof photo === 'object') {
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      photoUrl = e.target.result; 
+      createUser(photoUrl); 
     };
+    reader.readAsDataURL(photo); 
+    
+  } else {
+    createUser(photo);
+  }
+};
 
-    // Add the new user to the array of users
-    setUsers([...users, newUser]);
+const createUser = async (photoUrl) => {
+  const newUser = {
+    name,
+    email,
+    password,
+    dob: `${year}-${month}-${day}`,
+    gender,
+    photo: photoUrl,
+    friends: []
+  };
+
+  try {
+    const response = await fetch('http://localhost:8080/api/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newUser)
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to create user');
+    }
 
     resetFields();
-  };
+    console.log('User created successfully');
+
+  } catch (error) {
+    console.error('Error creating user:', error.message);
+  }
+};
+
+
+
 
   const resetFields = () => {
     setName('');
