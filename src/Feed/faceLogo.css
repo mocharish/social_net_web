@@ -1,0 +1,9 @@
+
+
+.face-logo {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    position: absolute;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+  }

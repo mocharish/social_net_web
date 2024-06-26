@@ -1,0 +1,94 @@
+
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Set background color of the entire page to white */
+}
+/* Apply styles to the container */
+.container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set container height to 100% of viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the left and right sections */
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    align-items: center; /* Center children horizontally */
+}
+
+/* Ensure the right section is inside a square */
+.right-section {
+    flex: 1; /* Fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    max-width: 100%; /* Set maximum width to 50% of the viewport */
+    max-height: 100%; /* Set maximum height to 50% of the viewport */
+    padding: 20px; /* Add padding */
+    border: 2px solid black; /* Add border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-left: 20px; /* Move the right container 20px to the right */
+}
+
+.right-section-content {
+    margin-bottom: 1rem;
+}
+
+/* Adjust button width */
+.btn {
+    width: 100%; /* Make buttons width 100% */
+}
+
+h1 {
+    color: blue; /* Change the color of the title to blue */
+}
+
+/* Styles for night mode */
+.night-mode {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.night-mode .left-section,
+.night-mode .right-section {
+    color: #fff; 
+}
+
+.night-mode-btn {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer; 
+}
+
+.night-mode-icon {
+    color: #fff; 
+}
+
+.night-mode .right-section {
+    flex: 1; /* Fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    max-width: 100%; /* Set maximum width to 50% of the viewport */
+    max-height: 100%; /* Set maximum height to 50% of the viewport */
+    padding: 20px; /* Add padding */
+    border: 2px solid rgb(245, 245, 245); /* Add border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-left: 20px; /* Move the right container 20px to the right */
+}
+
+.night-mode  {
+
+    background-color: #000;
+}

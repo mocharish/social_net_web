@@ -1,0 +1,91 @@
+.nav-tabs {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+  
+ 
+  
+  .nav-item1 {
+    margin-right: 0rem; /* Adjust the spacing between menu items as needed */
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last menu item to prevent extra space */
+  }
+
+  .nav.nav-tabs .nav-item {
+    margin-right: 10px; /* Adjust the margin between items */
+  }
+  
+  .nav.nav-tabs .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item to prevent extra space */
+  }
+
+
+ 
+  
+.nav.nav-tabs .nav-item .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Set the width and height to make it circular */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    background-color: #cccccc; /* Gray background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav.nav-tabs .nav-item .nav-link:hover {
+    background-color: #999; /* Change background color on hover */
+  }
+  
+  .nav.nav-tabs .icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .light-mode {
+    /* Styles for light mode */
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #111; /* Dark background color */
+     /* Light text color */
+  }
+  
+  .mode-toggle {
+    position: absolute;
+    top: 40px;
+    right: 23px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+    font-size: 15px;
+  }
+
+  .dark-mode .nav.nav-tabs {
+    background-color: #333; /* Dark background color for the navigation */
+  }
+  
+  .dark-mode .nav.nav-tabs .nav-link {
+    color: #fff; /* Light text color for navigation links */
+  }
+  
+  .dark-mode .dropdown-menu {
+    background-color: #333; /* Dark background color for dropdown menu */
+  }
+  
+  .dark-mode .dropdown-item {
+    color: #fff; /* Light text color for dropdown items */
+  }
+  
+  

@@ -1,0 +1,50 @@
+
+.list-container {
+    position: fixed; /* Position the container relative to the viewport */
+    bottom: 55px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+  }
+
+
+.circular-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 50px; /* Set the width of the image */
+    height: 50px; /* Set the height of the image */
+    object-fit: cover; /* Ensures the image covers the circular container */
+  }
+
+  
+
+  .list-group-item00 {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    border: 0;
+    height: 70px;
+    
+  }
+  
+  /* Define styles for the name */
+  .list-group-item span {
+    font-weight: bold; /* Make the name bold */
+    margin-left: 10px; /* Add some space between the image and the name */
+    flex: 1; /* Allow the text to grow to fill available space */
+    white-space: nowrap; /* Prevent text from wrapping onto multiple lines */
+    
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+  }
+
+  .list-group00 {
+    width: 180px;
+    height: 500px;
+   margin-bottom: 0px;
+    
+}
+
+.dark-mode   .list-group-item00 {
+  background-color: #111 ; /* Dark background color */
+   color: #fff;
+}
+
+.list-group-item00:Hover {
+  background-color: lightgray;
+}

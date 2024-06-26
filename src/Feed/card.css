@@ -1,0 +1,101 @@
+.search-input1 {
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 40px; /* Set overall border radius */
+  background-color: #fff;
+  border-top-left-radius: 0; /* Rounded top-left border */
+  border-bottom-left-radius: 0; /* Rounded bottom-left border */
+  margin-left: 60px; /* Adjusted margin to provide space for the photo */
+  margin-top: 0px;
+  width: 390px; /* Adjusted width to accommodate the photo */
+  outline: none;
+}
+
+.bi-search {
+  margin-right: 8px;
+}
+
+.search-button span {
+  display: flex;
+  align-items: center;
+}
+
+.search-button svg {
+  margin-right: 8px;
+}
+
+.card {
+  width: 600px;
+  height: auto; /* Adjusted height */
+  margin-top: 100px;
+  position: relative;
+}
+
+.user-photo1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 40%; /* Center vertically */
+  left: 0px; /* Adjusted left position */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.list-group-horizontal {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 20px;
+  left: -120px;
+  
+}
+
+
+
+.search-container {
+  position: relative; /* Ensure relative positioning for absolute elements */
+}
+
+.divider2 {
+  position: absolute; /* Position the divider line absolutely */
+  top: 205%; /* Position it below the user photo/search input */
+  left: 0; /* Align it to the left edge */
+  margin-top: 10px; /* Adjusted margin to add space between the user photo/search input and the divider */
+  width: 100%; /* Ensure full width */
+}
+
+
+.list-group-horizontal li {
+  margin-right: 20px;
+}
+
+.list-group-horizontal .list-group-item2 button {
+  display: flex; /* Ensure the button content is flex */
+  align-items: center; /* Align content vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  padding: 0; /* Remove padding */
+}
+
+.list-group-horizontal .list-group-item2 button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.list-group-horizontal .list-group-item2 button span {
+  font-size: 10px;
+}
+
+.dark-mode   .card {
+  background-color: #111 ; /* Dark background color */
+   color: #fff;
+  border-color: #ffffff;;
+}

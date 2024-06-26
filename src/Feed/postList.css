@@ -1,0 +1,80 @@
+
+
+/* postlist.css */
+
+
+  
+.feed button {
+    background-color: rgb(51, 0, 255); /* Set button background color to blue */
+    color: white; /* Set button text color to white */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add some margin below the button */
+  }
+
+
+  .feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the button horizontally */
+    padding: 20px;
+  }
+
+  .modal-content.post{
+    width: 300px;
+    height: 300px;
+    
+    
+  }
+
+  .add-post-button {
+    margin-top: 20px; /* Adjust the top margin to position the button */
+  }
+  
+  .modal-body.post{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-title.post{
+    font-size: 1.5rem; /* Adjust the font size of the modal title */
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  .button-group button {
+    margin-left: 10px; /* Add spacing between buttons */
+  }  
+  
+
+  .button-primary{
+    top: 0px;
+  }
+  
+
+  .modal-dialog.modal-dialog-centered {
+    position: fixed;
+    top: 50px;
+}
+
+.modal-header.post .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -15px; 
+  margin-top: -15px;
+ 
+}
+
+.AddPostModel{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+

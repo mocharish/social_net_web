@@ -1,0 +1,61 @@
+/* Icons.css */
+
+  .navbar-brand {
+    margin-right: 7rem; /* Adjust margin as needed */
+  }
+
+  
+  .nav-link svg {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+    fill: currentColor; /* Use the same color as the text */
+    vertical-align: middle;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+  }
+
+  .top-story i:hover {
+    color: blue; /* Change text color to blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  .nav-item {
+    margin-right: 5rem; /* Add margin between each list item */
+  }
+
+  
+  .nav-link:active,
+.nav-link:focus {
+  color: blue; /* Change text color to blue */
+  border-bottom: 2px solid blue; /* Add blue underline */
+}
+
+.navbar{
+    width: 600px;
+}
+
+
+.top-story i{
+  font-size: 22px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+.dark-mode .top-story i{
+  font-size: 22px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  color:white;
+  background: #000;
+}
+
+.dark-mode nav{
+  font-size: 22px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  color:white;
+  background: #000000;
+}

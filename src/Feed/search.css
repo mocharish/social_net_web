@@ -1,0 +1,33 @@
+
+
+.search-input {
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 40px; /* Set overall border radius */
+    background-color: #fff;
+    border-top-left-radius: 0; /* Rounded top-left border */
+    border-bottom-left-radius: 0; /* Rounded bottom-left border */
+    margin-top: 10px; /* Adjust the margin-top value to move the button farther from the top */
+    margin-left: 5px;
+    background-color: #ccc;
+   
+  }
+  
+  .bi-search {
+    margin-right: 8px;
+  }
+
+  .search-button span {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-button svg {
+    margin-right: 8px;
+  }
+
+  
+  

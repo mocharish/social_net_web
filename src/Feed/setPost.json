@@ -1,0 +1,100 @@
+
+
+
+[
+    {
+        "id": 1,
+        "pic": "sun.jpg",
+        "content": "Here comes the sun!",
+        "author": "Joe Buck",
+        "date": "1 month ago",
+        "comments": [
+            {
+                "postId": 1,
+                "author": "Sally Smith",
+                "text": "Beautiful!"
+            },
+            {
+                "postId": 1,
+                "author": "John Johnson",
+                "text": "Love it!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pic": "color.jpg",
+        "content": "colors in the air",
+        "author": "Daniel Larusso",
+        "date": "5 days ago"
+    },
+
+    {
+        "id": 3,
+        "pic": "beach2.jpg",
+        "content": "I got beaches",
+        "author": "Peter Griffin",
+        "date": "two weeks age"
+    },
+
+    {
+        "id": 4,
+        "pic": "club.jpg",
+        "content": "Work hard play hard",
+        "author": "Sam Sung",
+        "date": "two days ago"
+    },
+
+
+    {
+        "id": 5,
+        "pic": "ballgame.jpg",
+        "content": "Take me out to the ballgame",
+        "author": "Justin Case",
+        "date": "5 hours ago"
+    },
+
+    {
+        "id": 6,
+        "pic": "couch.jpg",
+        "content": "Looking to sell this couch",
+        "author": "John Johnson",
+        "date": "13 hours ago"
+    },
+
+
+    {
+        "id": 7,
+        "pic": "flowers.jpg",
+        "content": "I can buy myself flowers",
+        "author": "Juan direction",
+        "date": "23 hours ago"
+    },
+
+    {
+        "id": 8,
+        "pic": "paint.jpg",
+        "content": "bruhhhh",
+        "author": "Joe Mama",
+        "date": "4 day ago"
+    },
+
+    {
+        "id": 9,
+        "pic": "strawberry.jpg",
+        "content": "strawberry fields forever",
+        "author": "Jack Daniels",
+        "date": "week ago"
+    },
+
+    {
+        "id": 10,
+        "pic": "blogger.jpg",
+        "content": "#grrr_mondays",
+        "author": "Scooter Mcgruder",
+        "date": "3 weeks ago"
+    }
+
+
+    
+]

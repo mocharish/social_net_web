@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Style for the container */
+.date-input-container {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the label */
+  .birthday-label {
+    margin-right: 0.5rem;
+  }
+  
+  /* Style for the info icon */
+  .info-icon {
+    font-size: 1.2rem;
+    color: #6c757d; /* Adjust the color as needed */
+    cursor: pointer;
+  }
+  
+  /* Style for the form selects */
+  .form-select {
+    margin-right: 0.5rem;
+    width: 8rem; /* Adjust width as needed */
+  }
+  
+  /* Style for error message */
+  .text-danger {
+    color: #dc3545; /* Adjust color as needed */
+    font-size: 0.875rem; /* Adjust font size as needed */
+    margin-top: 10px;
+  }
+  

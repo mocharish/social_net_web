@@ -1,0 +1,5 @@
+ .messenger-icon-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    padding: 0 30px; 
+ }

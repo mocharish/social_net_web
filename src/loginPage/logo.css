@@ -1,0 +1,26 @@
+
+
+
+
+/* Styles for the left and right sections */
+.left-section{
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    align-items: center; /* Center children horizontally */
+}
+
+h1 {
+    color: blue; /* Change the color of the title to blue */
+}
+
+/* Styles for night mode */
+.night-mode {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.night-mode .left-section {
+    color: #fff; 
+}
+

@@ -1,0 +1,36 @@
+
+
+
+.image-small {
+    width: 100px;
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+
+/* styles.css */
+.statusList {
+    display: flex; /* Use flexbox layout */
+  }
+  
+  .statusItem {
+    margin-right: 20px; /* Add some spacing between items */
+    position: relative; /* Position the container relatively */
+    display: inline-block;
+  }
+  
+  .statusItem img {
+    width: 100px; /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-right: 7px; /* Add some spacing between items */
+  }
+
+
+  .statusItem .overlay-text {
+    position: absolute; /* Position the text absolutely within the container */
+    bottom: 0; /* Align the text to the bottom */
+    left: 0; /* Align the text to the left */
+    right: 7px; /* Align the text to the right */
+   
+    color: white; /* Text color */
+    padding: 4px; /* Add some padding for better appearance */
+  }

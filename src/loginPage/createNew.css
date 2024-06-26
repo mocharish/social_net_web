@@ -1,0 +1,27 @@
+/* createNew.css */
+.date-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.date-input-container select {
+  margin-right: 8px;
+}
+
+.gender-label {
+  margin-right: 8px;
+}
+
+.form-check {
+  margin-right: 16px;
+}
+.modal-header{
+  margin-left:100 px;
+  color: black;
+}
+
+

@@ -1,0 +1,31 @@
+
+
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    background-color: #f5f5f5; /* Default background color */
+  }
+  
+  .dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+
+.post-list{
+  margin-bottom: 0px;
+}
+
+.warning-container {
+  text-align: center;
+  margin-top: 20%;
+  font-family: Arial, sans-serif;
+}
+
+.login-link {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
