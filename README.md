@@ -1,18 +1,101 @@
-Link to repository: https://github.com/mocharish/social_net_web.git
+# FeedBook Web Repository
 
-In this FeedBook page you can create a new user, sign in and then access the feed page. In the feed page there is content and you can add posts, comments, likes and other actions.
+This repository contains the frontend for FeedBook, a social networking platform where users can create and manage posts, connect with friends, and engage with their community.
 
-How to run:
+## Table of Contents
 
-1. Clone the repository
+- [Project Description](#project-description)
+- [Features](#features)
+- [Running Instructions](#running-instructions)
+- [Environment Setup](#environment-setup)
+- [Workflow](#workflow)
+- [Repository Links](#repository-links)
 
-2. Compile the code - make sure you ate on the right path and install dependicies
+## Project Description
 
-3. Open the project by running npm start, this will take you to localhost:3000.
+FeedBook is a social networking platform where users can:
 
-4. To sign in, first you need to register. Fill in all the fields of new account according to the guide lines. After creating new account enter user name and password to sign in. We used a built in user for entering - name: yosi@gmail.com, password: 1234. 
+- Register and log in securely.
+- Create, edit, and delete posts.
+- Like and comment on posts.
+- Manage friend connections.
+- Toggle between light and dark mode.
 
-5. In the feed page there is button to add posts, you can also delete, like, edit and comment on posts.  In the top right of the page the is an arrow down button, by clicking on it a dropdown menu appears in which you can change page to dark mode and log out.  You can only edit posts that you added (not the built in postrs)
+The frontend is built using React and connects to the backend via RESTful API endpoints.
+
+## Features
+
+- **User Authentication**: Secure login and registration.
+- **Post Management**: Create, update, delete, and view posts.
+- **Interactivity**: Like and comment on posts.
+- **Friend Management**: Send, accept, and manage friend requests.
+- **Dark Mode**: Toggle between light and dark themes.
+
+## Running Instructions
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/mocharish/social_net_web.git
+cd social_net_web
+```
+
+### Install Dependencies
+
+Ensure you're in the project directory and run:
+
+```sh
+npm install
+```
+
+### Start the Application
+
+```sh
+npm start
+```
+
+This will open the application at `http://localhost:3000`.
+
+### Sign Up and Sign In
+
+To access the feed page, you must first register an account and then log in.
+
+### Feed Page
+
+Once logged in, you can:
+
+- Create new posts.
+- Edit or delete your own posts.
+- Like and comment on posts.
+- Toggle dark mode from the dropdown menu in the top-right corner.
+- Log out.
+
+## Environment Setup
+
+Ensure you have the following installed:
+
+- Node.js (v16+ recommended)
+- npm or yarn
+- A running instance of the FeedBook server (see [FeedBook Server Repository](https://github.com/mocharish/social_net_server))
+
+## Workflow
+
+### Development Process
+
+1. **Planning**: We outlined project requirements and created a Jira board to manage tasks.
+2. **Task Division**: One team member worked on authentication while another focused on the feed.
+3. **Version Control**:
+   - We used Git branches for different features.
+   - Merged changes via pull requests after code review.
+4. **Testing**: We implemented tests to ensure component functionality.
+
+## Repository Links
+
+- **FeedBook Web (this repository)**: [GitHub](https://github.com/mocharish/social_net_web)
+- **FeedBook Server**: [GitHub](https://github.com/mocharish/social_net_server)
 
 
- Workflow:  after fully reading and understanding the project, we began working on the web.  We split up the work in which, one started to work on the sign up and one on the feed, each on a different branch. We merged the codes when we needed to access info from the other. We also made tests in order to clarify that our components work.  
+
+
+
+
